@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mason Smith — Investor, Builder, Founder of Rivendell</title>
+<meta name="description" content="Mason Smith — investor, educator, and founder of Rivendell. Six years of hard-tech investing at Actium Group across biotech, AI, defense, and energy. Now helping ambitious people forge careers built for the AI age." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  /* ============================================================
+     RIVENDELL BRAND IDENTITY — applied
+     Palette:
+       --ink     #0F3D2E  forest
+       --moss    #6B8F71  moss
+       --sage    #A8C5B0  sage
+       --gold    #C8A15A  gold
+       --cream   #F5F1E6  parchment
+  ============================================================ */
+  :root {
+    --ink: #0F3D2E;
+    --ink-soft: #1A4D3A;
+    --moss: #6B8F71;
+    --sage: #A8C5B0;
+    --sage-pale: #D5E2D8;
+    --gold: #C8A15A;
+    --gold-warm: #B8893E;
+    --cream: #F5F1E6;
+    --cream-dim: #EBE5D4;
+    --paper: #FAF7EE;
+    --shadow: rgba(15, 61, 46, 0.08);
+    --shadow-strong: rgba(15, 61, 46, 0.16);
+
+    --display: 'Cinzel', 'Trajan Pro', 'Cormorant Garamond', Georgia, serif;
+    --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --sans: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --maxw: 1180px;
+    --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: var(--ink); text-decoration: none; transition: color .2s ease; }
+  a:hover { color: var(--gold-warm); }
+
+  img { max-width: 100%; display: block; }
+
+  ::selection { background: var(--gold); color: var(--cream); }
+
+  /* ---------- Typography ---------- */
+  h1, h2, h3, h4 {
+    font-family: var(--display);
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.6em;
+  }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: 1.05; letter-spacing: 0.06em; }
+  h2 { font-size: clamp(1.75rem, 3.6vw, 2.6rem); letter-spacing: 0.08em; text-transform: uppercase; }
+  h3 { font-size: clamp(1.15rem, 2vw, 1.4rem); letter-spacing: 0.05em; }
+  h4 { font-size: 1rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--moss); }
+
+  p { margin: 0 0 1em; }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-warm);
+    margin: 0 0 1rem;
+  }
+
+  .lede {
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+    line-height: 1.55;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  /* ---------- Layout ---------- */
+  .container {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+  section {
+    padding: clamp(4rem, 9vw, 7.5rem) 0;
+    position: relative;
+  }
+  section + section { border-top: 1px solid var(--cream-dim); }
+
+  /* ---------- Nav ---------- */
+  nav.top {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 241, 230, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--cream-dim);
+  }
+  nav.top .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.95rem var(--gutter);
+    max-width: var(--maxw);
+    margin: 0 auto;
+  }
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .brand-mark svg { flex-shrink: 0; }
+  nav.top ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+  nav.top ul a {
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  nav.top ul a:hover { color: var(--gold-warm); }
+  @media (max-width: 820px) {
+    nav.top ul { display: none; }
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.6rem;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1.5px solid var(--ink);
+    background: var(--ink);
+    color: var(--cream);
+    cursor: pointer;
+    transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn:hover { background: var(--gold-warm); border-color: var(--gold-warm); color: var(--cream); transform: translateY(-1px); }
+  .btn.ghost {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn.ghost:hover { background: var(--ink); color: var(--cream); }
+  .btn.gold {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--ink);
+  }
+  .btn.gold:hover { background: var(--gold-warm); border-color: var(--gold-warm); color: var(--cream); }
+  .btn .arrow { display: inline-block; transition: transform .2s ease; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+  }
+  .text-link:hover { color: var(--gold-warm); border-color: var(--gold-warm); }
+
+  /* ---------- Divider w/ gold star (brand "light" shape) ---------- */
+  .divider {
+    display: flex; align-items: center; justify-content: center;
+    margin: 2.4rem 0;
+    color: var(--gold);
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.4;
+    max-width: 120px;
+  }
+  .divider svg { margin: 0 1.2rem; }
+
+  /* ============================================================
+     HERO
+  ============================================================ */
+  .hero {
+    padding: clamp(5rem, 10vw, 9rem) 0 clamp(4rem, 8vw, 7rem);
+    background:
+      radial-gradient(circle at 12% 18%, rgba(168, 197, 176, 0.35), transparent 60%),
+      radial-gradient(circle at 88% 82%, rgba(200, 161, 90, 0.18), transparent 55%),
+      var(--cream);
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+  }
+  @media (max-width: 880px) {
+    .hero-grid { grid-template-columns: 1fr; }
+  }
+  .hero h1 {
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+  }
+  .hero h1 .ink { color: var(--ink); }
+  .hero .lede { max-width: 36rem; margin-bottom: 2rem; }
+  .hero .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .hero .meta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--moss);
+    letter-spacing: 0.06em;
+  }
+  .hero .meta span { display: inline-flex; align-items: center; gap: 0.5rem; }
+
+  /* Hero arch ornament */
+  .hero-arch {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    max-width: 380px;
+    margin-left: auto;
+    border-radius: 200px 200px 8px 8px;
+    background:
+      linear-gradient(180deg, rgba(15,61,46,0.06), rgba(15,61,46,0.02)),
+      linear-gradient(135deg, var(--sage-pale), var(--cream));
+    border: 1px solid var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 30px 60px var(--shadow);
+  }
+  .hero-arch::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border-radius: 190px 190px 4px 4px;
+    border: 1px solid var(--gold);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .hero-arch .mark {
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-arch .mark .glyph svg { margin: 0 auto; }
+  .hero-arch .mark .label {
+    margin-top: 1.4rem;
+    font-family: var(--display);
+    font-size: 1.2rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .hero-arch .mark .sub {
+    margin-top: 0.4rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--moss);
+  }
+
+  /* ============================================================
+     ABOUT
+  ============================================================ */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+  @media (max-width: 820px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+  .about-grid .label-col h4 { margin-bottom: 0.4rem; }
+  .about-grid .label-col p {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--moss);
+  }
+  .about-body p { font-size: 1.05rem; }
+
+  /* ============================================================
+     RIVENDELL FEATURE
+  ============================================================ */
+  .rivendell-feature {
+    background: var(--ink);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .rivendell-feature::before {
+    content: '';
+    position: absolute;
+    top: -10%; right: -8%;
+    width: 520px; height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,161,90,0.18), transparent 65%);
+    pointer-events: none;
+  }
+  .rivendell-feature::after {
+    content: '';
+    position: absolute;
+    bottom: -10%; left: -8%;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(107,143,113,0.20), transparent 65%);
+    pointer-events: none;
+  }
+  .rivendell-feature .container { position: relative; z-index: 1; }
+  .rivendell-feature .eyebrow { color: var(--gold); }
+  .rivendell-feature h2, .rivendell-feature h3 { color: var(--cream); }
+  .rivendell-feature .lede { color: rgba(245,241,230,0.85); max-width: 50rem; }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 540px) {
+    .pillars { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  }
+  .pillar {
+    background: rgba(245,241,230,0.04);
+    border: 1px solid rgba(200,161,90,0.25);
+    border-radius: 4px;
+    padding: 1.25rem 0.9rem;
+    text-align: center;
+    transition: transform .25s ease, border-color .25s ease, background .25s ease;
+  }
+  .pillar:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+    background: rgba(245,241,230,0.07);
+  }
+  .pillar .icon { display: flex; justify-content: center; margin-bottom: 0.6rem; color: var(--gold); }
+  .pillar .icon svg { width: 34px; height: 34px; }
+  .pillar h3 {
+    font-family: var(--display);
+    font-size: 0.92rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+  }
+  .pillar p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0;
+    color: rgba(245,241,230,0.78);
+  }
+
+  /* ============================================================
+     CAREER FORGE OFFER
+  ============================================================ */
+  .forge {
+    background:
+      linear-gradient(180deg, var(--paper), var(--cream));
+  }
+  .forge-card {
+    background: var(--paper);
+    border: 1px solid var(--cream-dim);
+    border-radius: 6px;
+    padding: clamp(2rem, 4vw, 3.5rem);
+    box-shadow: 0 20px 50px var(--shadow);
+    position: relative;
+  }
+  .forge-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ink), var(--gold), var(--ink));
+    border-radius: 6px 6px 0 0;
+  }
+  .forge-head {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: end;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--cream-dim);
+  }
+  @media (max-width: 720px) {
+    .forge-head { grid-template-columns: 1fr; align-items: start; }
+  }
+  .forge-head .price {
+    font-family: var(--display);
+    text-align: right;
+  }
+  @media (max-width: 720px) {
+    .forge-head .price { text-align: left; }
+  }
+  .forge-head .price .num {
+    display: block;
+    font-size: 3rem;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .forge-head .price .sub {
+    display: block;
+    margin-top: 0.4rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--moss);
+  }
+
+  .journey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin: 2.5rem 0;
+  }
+  @media (max-width: 820px) {
+    .journey { grid-template-columns: 1fr; }
+  }
+  .journey-step {
+    background: var(--cream);
+    border: 1px solid var(--cream-dim);
+    border-radius: 4px;
+    padding: 1.6rem;
+    position: relative;
+  }
+  .journey-step .step-num {
+    font-family: var(--display);
+    font-size: 0.75rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-warm);
+  }
+  .journey-step h3 {
+    margin: 0.4rem 0 0.2rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: var(--serif);
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .journey-step .label {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 0.8rem;
+  }
+  .journey-step p { font-size: 0.95rem; margin: 0; color: var(--ink-soft); }
+
+  .receive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 2.2rem;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 720px) {
+    .receive-grid { grid-template-columns: 1fr; }
+  }
+  .receive-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.9rem;
+    align-items: start;
+  }
+  .receive-item .dot {
+    width: 8px; height: 8px;
+    margin-top: 0.55rem;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .receive-item h4 { color: var(--ink); margin: 0 0 0.2rem; font-size: 0.88rem; letter-spacing: 0.1em; }
+  .receive-item p { font-size: 0.95rem; margin: 0; color: var(--ink-soft); }
+
+  .forge-cta {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--cream-dim);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+  }
+  .forge-cta .guarantee {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--moss);
+    font-size: 1rem;
+    max-width: 28rem;
+  }
+
+  /* ============================================================
+     TRACK RECORD
+  ============================================================ */
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 820px) {
+    .deals { grid-template-columns: 1fr; }
+  }
+  .deal {
+    background: var(--paper);
+    border: 1px solid var(--cream-dim);
+    border-radius: 4px;
+    padding: 1.8rem 1.6rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .deal:hover { transform: translateY(-2px); box-shadow: 0 12px 28px var(--shadow); }
+  .deal .sector {
+    font-size: 0.72rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--gold-warm);
+    font-weight: 600;
+  }
+  .deal h3 {
+    margin: 0.5rem 0 0.6rem;
+    font-family: var(--display);
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: var(--ink);
+  }
+  .deal p { font-size: 0.95rem; margin: 0 0 1rem; color: var(--ink-soft); }
+  .deal .stats {
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream-dim);
+    font-size: 0.85rem;
+  }
+  .deal .stats span { color: var(--moss); }
+  .deal .stats strong { display: block; color: var(--ink); font-family: var(--display); font-size: 1.05rem; font-weight: 500; }
+
+  .track-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--paper);
+    border: 1px solid var(--cream-dim);
+    border-radius: 4px;
+  }
+  @media (max-width: 720px) {
+    .track-meta { grid-template-columns: 1fr; }
+  }
+  .track-meta .stat {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .track-meta .stat .num {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    color: var(--ink);
+    display: block;
+    line-height: 1;
+  }
+  .track-meta .stat .label {
+    margin-top: 0.6rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--moss);
+  }
+
+  /* ============================================================
+     DOMAINS (industries)
+  ============================================================ */
+  .domains {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 880px) {
+    .domains { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .domains { grid-template-columns: 1fr; }
+  }
+  .domain {
+    padding: 1.8rem 1.4rem;
+    border: 1px solid var(--sage);
+    border-radius: 4px;
+    background: var(--paper);
+  }
+  .domain h3 {
+    font-family: var(--display);
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .domain p { font-size: 0.95rem; margin: 0; color: var(--ink-soft); }
+
+  /* ============================================================
+     TWO-COL CHAPTERS (St. Mark's, Podcast)
+  ============================================================ */
+  .chapter {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+  @media (max-width: 820px) {
+    .chapter { grid-template-columns: 1fr; }
+  }
+  .chapter .meta-col h4 { margin-bottom: 0.4rem; }
+  .chapter .meta-col .tag-line {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--moss);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  .chapter-body h3 {
+    text-transform: none;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 0.6rem;
+    color: var(--ink);
+  }
+
+  .sub-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 720px) {
+    .sub-cards { grid-template-columns: 1fr; }
+  }
+  .sub-card {
+    padding: 1.2rem;
+    background: var(--paper);
+    border-left: 2px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+  }
+  .sub-card h4 { color: var(--ink); margin: 0 0 0.4rem; font-size: 0.82rem; letter-spacing: 0.14em; }
+  .sub-card p { margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ============================================================
+     ATHLETE / STATS
+  ============================================================ */
+  .athlete-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 3rem;
+  }
+  @media (max-width: 720px) {
+    .athlete-stats { grid-template-columns: 1fr; }
+  }
+  .athlete-stat {
+    padding: 2rem 1.6rem;
+    background: var(--paper);
+    border: 1px solid var(--cream-dim);
+    border-radius: 4px;
+    text-align: center;
+  }
+  .athlete-stat .big {
+    font-family: var(--display);
+    font-size: 2.4rem;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .athlete-stat h3 {
+    text-transform: none;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 1rem 0 0.4rem;
+  }
+  .athlete-stat p { margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ============================================================
+     BEYOND THE CV
+  ============================================================ */
+  .beyond-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 720px) {
+    .beyond-grid { grid-template-columns: 1fr; }
+  }
+  .beyond-card {
+    padding: 2rem;
+    background: var(--paper);
+    border: 1px solid var(--cream-dim);
+    border-radius: 4px;
+  }
+  .beyond-card h3 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  /* ============================================================
+     COMMUNITY
+  ============================================================ */
+  .community {
+    background: var(--sage-pale);
+    border-top: 1px solid var(--sage);
+    border-bottom: 1px solid var(--sage);
+  }
+  .community .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 720px) { .community .grid { grid-template-columns: 1fr; } }
+  .community .item {
+    background: var(--cream);
+    padding: 1.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--sage);
+  }
+  .community .item h4 { color: var(--ink); margin: 0 0 0.4rem; font-size: 0.82rem; letter-spacing: 0.14em; }
+  .community .item p { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+
+  /* ============================================================
+     CREATIVE / WRITING
+  ============================================================ */
+  .creative-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 720px) { .creative-grid { grid-template-columns: 1fr; } }
+  .creative-card {
+    padding: 2rem;
+    background: var(--paper);
+    border-top: 3px solid var(--gold);
+    border-radius: 0 0 4px 4px;
+  }
+  .creative-card h3 {
+    text-transform: none;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  .creative-card .links {
+    display: flex; gap: 1.2rem; flex-wrap: wrap;
+    margin-top: 1rem;
+    font-size: 0.88rem;
+  }
+  .creative-card .links a { color: var(--ink); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
+  /* ============================================================
+     CONTACT / CTA
+  ============================================================ */
+  .contact {
+    background: var(--ink);
+    color: var(--cream);
+    text-align: center;
+    padding: clamp(5rem, 10vw, 8rem) 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact::before {
+    content: '';
+    position: absolute;
+    top: -20%; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,161,90,0.10), transparent 60%);
+    pointer-events: none;
+  }
+  .contact .container { position: relative; z-index: 1; }
+  .contact h2 { color: var(--cream); }
+  .contact .lede { color: rgba(245,241,230,0.85); margin: 0 auto 2.5rem; max-width: 36rem; }
+  .contact .cta-row { justify-content: center; display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .contact .socials {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .contact .socials a { color: var(--cream); opacity: 0.85; border-bottom: 1px solid rgba(200,161,90,0.5); padding-bottom: 2px; }
+  .contact .socials a:hover { color: var(--gold); opacity: 1; border-color: var(--gold); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: #0A2A20;
+    color: rgba(245,241,230,0.5);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+  footer a { color: rgba(245,241,230,0.7); }
+  footer a:hover { color: var(--gold); }
+
+  /* ---------- Tiny helpers ---------- */
+  .row-flex { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .text-center { text-align: center; }
+  .pad-top-sm { margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="top">
+  <div class="inner">
+    <a href="#top" class="brand-mark">
+      <!-- Mini arch + path glyph -->
+      <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 27V11C1 5.477 5.477 1 11 1C16.523 1 21 5.477 21 11V27" stroke="#0F3D2E" stroke-width="1.2"/>
+        <path d="M7 27C7 21 11 19 11 15C11 11 7 9 9 5" stroke="#C8A15A" stroke-width="1" stroke-linecap="round"/>
+        <circle cx="16" cy="6" r="0.8" fill="#C8A15A"/>
+      </svg>
+      Mason Smith
+    </a>
+    <ul>
+      <li><a href="#rivendell">Rivendell</a></li>
+      <li><a href="#actium">Actium</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Investor · Educator · Founder</p>
+        <h1>
+          <span class="ink">Mason Smith</span>
+        </h1>
+        <p class="lede">
+          Six years deploying capital into the technologies shaping the next decade — biotech,
+          AI, defense, energy. Now building <strong style="color:var(--ink);">Rivendell</strong>,
+          a venture helping ambitious people forge careers built for the AI age.
+        </p>
+        <div class="cta-row">
+          <a class="btn gold" href="#rivendell">
+            What is Rivendell? <span class="arrow">→</span>
+          </a>
+          <a class="btn ghost" href="#connect">Get in Touch</a>
+        </div>
+        <div class="meta">
+          <span>📍 Dallas, TX</span>
+          <span>🎓 Stanford ’19</span>
+          <span>🏔 Sub-3 Marathon · 3× IM 70.3</span>
+        </div>
+      </div>
+
+      <div class="hero-arch" aria-hidden="true">
+        <div class="mark">
+          <div class="glyph">
+            <!-- Quest compass / star — drawn larger for hero arch -->
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="45" cy="45" r="40" stroke="#C8A15A" stroke-width="1.2" opacity="0.7"/>
+              <circle cx="45" cy="45" r="30" stroke="#0F3D2E" stroke-width="0.8" opacity="0.4"/>
+              <!-- 4-point star -->
+              <path d="M45 15 L48 42 L75 45 L48 48 L45 75 L42 48 L15 45 L42 42 Z" fill="#0F3D2E"/>
+              <circle cx="45" cy="45" r="3" fill="#C8A15A"/>
+              <!-- Small accent stars -->
+              <path d="M70 22 L71 26 L75 27 L71 28 L70 32 L69 28 L65 27 L69 26 Z" fill="#C8A15A" opacity="0.9"/>
+              <path d="M18 65 L19 68 L22 69 L19 70 L18 73 L17 70 L14 69 L17 68 Z" fill="#C8A15A" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="label">Rivendell</div>
+          <div class="sub">Where your quest begins.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="label-col">
+        <h4>The Short Version</h4>
+        <p>Investor by training. Educator by instinct. Building Rivendell because someone has to teach the next generation how to actually navigate this.</p>
+      </div>
+      <div class="about-body">
+        <p>
+          I’ve spent the last six years at Actium Group leading hard-tech investments
+          across biotech, semiconductors, defense, and energy — deploying 8-figure checks
+          and building a commercialization partnership with UT&nbsp;Southwestern, the
+          #2 academic medical center in Texas.
+        </p>
+        <p>
+          Before that, I designed the Character &amp; Leadership Program at St.&nbsp;Mark’s
+          School of Texas, where I learned how to build frameworks that actually help
+          ambitious people grow. I studied Management Science &amp; Engineering at
+          Stanford, ran a sub-3-hour marathon in New York, finished three Ironman 70.3s,
+          and host the <em>Learning from Leaders</em> podcast for the Southwestern Medical
+          Foundation.
+        </p>
+        <p>
+          Rivendell is what happens when those three threads — a capital allocator’s eye,
+          an educator’s instinct, and working knowledge of where the world is actually
+          going — get pointed at helping ambitious people build the careers they actually
+          want in the AI age.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RIVENDELL FEATURE
+============================================================ -->
+<section id="rivendell" class="rivendell-feature">
+  <div class="container">
+    <p class="eyebrow">Currently Building</p>
+    <h2>Rivendell</h2>
+    <p class="lede">
+      A Career Strategy venture for the AI age.
+      We help ambitious people build the skill stacks, strategic plans, and proof-of-work
+      portfolios that earn them a seat at the frontier — instead of being commoditized
+      by it.
+    </p>
+
+    <div class="divider" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="M9 0 L10 8 L18 9 L10 10 L9 18 L8 10 L0 9 L8 8 Z"/>
+      </svg>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M22 6 L24 20 L38 22 L24 24 L22 38 L20 24 L6 22 L20 20 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Quest</h3>
+        <p>Explore with purpose.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 4 L40 36 L4 36 Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+            <path d="M22 14 L30 30 L14 30 Z M22 14 L14 30 L30 30" stroke="currentColor" stroke-width="0.8" fill="none"/>
+            <circle cx="22" cy="24" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Skills</h3>
+        <p>Grow with intention.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="22" r="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+            <circle cx="29" cy="22" r="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+            <circle cx="22" cy="14" r="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <h3>Network</h3>
+        <p>Connect with trust.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="22" r="7" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <line x1="22" y1="4" x2="22" y2="9"/>
+              <line x1="22" y1="35" x2="22" y2="40"/>
+              <line x1="4" y1="22" x2="9" y2="22"/>
+              <line x1="35" y1="22" x2="40" y2="22"/>
+              <line x1="9" y1="9" x2="13" y2="13"/>
+              <line x1="31" y1="31" x2="35" y2="35"/>
+              <line x1="35" y1="9" x2="31" y2="13"/>
+              <line x1="13" y1="31" x2="9" y2="35"/>
+            </g>
+          </svg>
+        </div>
+        <h3>Energy</h3>
+        <p>Lead with vitality.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ACTIUM / TRACK RECORD
+============================================================ -->
+<section id="actium">
+  <div class="container">
+    <p class="eyebrow">Six Years at the Frontier</p>
+    <h2>Investing in Hard Tech</h2>
+    <p class="lede" style="max-width: 50rem;">
+      As Vice President at <strong>Actium Group</strong> — a Dallas-based VC/PE firm focused
+      on biotech and frontier technology — I led the full investment lifecycle from sourcing
+      to active portfolio support across the sectors actually shaping the next decade.
+    </p>
+
+    <div class="deals">
+      <div class="deal">
+        <div class="sector">Biotech · Genomics</div>
+        <h3>Oxford Nanopore</h3>
+        <p>Next-generation sequencing &amp; multi-omics platform. Pre-IPO lead across multiple rounds.</p>
+      </div>
+      <div class="deal">
+        <div class="sector">RNA Therapeutics</div>
+        <h3>Signify Bio</h3>
+        <p>RNA therapeutics &amp; drug delivery platform. Series A lead.</p>
+      </div>
+      <div class="deal">
+        <div class="sector">Neuro · Monoclonal Antibodies</div>
+        <h3>GenrAb</h3>
+        <p>Neuro monoclonal antibody development platform for MS &amp; ALS indications. Seed lead.</p>
+      </div>
+    </div>
+
+    <div class="track-meta">
+      <div class="stat">
+        <span class="num">$30M+</span>
+        <span class="label">Investment Partnership Managed</span>
+      </div>
+      <div class="stat">
+        <span class="num">6 yrs</span>
+        <span class="label">Full Lifecycle: Source → Diligence → Operate</span>
+      </div>
+      <div class="stat">
+        <span class="num">UTSW</span>
+        <span class="label">Landmark Commercialization Partnership</span>
+      </div>
+    </div>
+
+    <p style="margin-top: 2.5rem; max-width: 48rem; font-size: 1rem; color: var(--ink-soft);">
+      Also active in the Texoma Semiconductor Tech Hub and built sourcing relationships
+      across SMU, UT Dallas, UT Austin, Texas A&amp;M, and Rice. Continuing-education work
+      at Harvard Medical School (Cancer Genomics &amp; Precision Oncology), Harvard Business
+      School (Disruptive Strategy), and MIT (AI: Business Strategy).
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     INDUSTRY DOMAINS
+============================================================ -->
+<section id="domains">
+  <div class="container">
+    <p class="eyebrow">Domains</p>
+    <h2>Where I’ve Done The Work</h2>
+    <p class="lede" style="max-width: 48rem;">
+      Years of investment due diligence and partnership work have built a substantive,
+      hands-on understanding of the sectors reshaping the global economy.
+    </p>
+
+    <div class="domains">
+      <div class="domain">
+        <h3>Biotechnology</h3>
+        <p>Drug development pipelines, genomics, clinical-stage companies, and the regulatory landscape of modern medicine.</p>
+      </div>
+      <div class="domain">
+        <h3>AI &amp; Computing</h3>
+        <p>Foundation models, semiconductor infrastructure, and the enterprise software layer driving the AI build-out.</p>
+      </div>
+      <div class="domain">
+        <h3>Defense Tech</h3>
+        <p>Dual-use technologies, national security applications, and the growing commercial–defense intersection.</p>
+      </div>
+      <div class="domain">
+        <h3>Energy Tech</h3>
+        <p>Clean energy infrastructure, grid modernization, and next-generation power solutions for a decarbonizing economy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TEACHING & ST. MARK'S
+============================================================ -->
+<section id="teaching">
+  <div class="container">
+    <div class="chapter">
+      <div class="meta-col">
+        <p class="eyebrow">Teaching</p>
+        <h4>St. Mark’s School of Texas</h4>
+        <p class="tag-line">Building character in the classroom — and the pool.</p>
+      </div>
+      <div class="chapter-body">
+        <h3>Designed a school-wide Character &amp; Leadership Program.</h3>
+        <p>
+          As a Teaching Fellow at St.&nbsp;Mark’s — consistently ranked among the top all-boys
+          private schools in the U.S. — I helped to design and to build the school’s signature
+          <strong>Character &amp; Leadership Program</strong>: curriculum, digital platform,
+          and the cross-faculty buy-in to deploy it across Lower, Middle, and High schools.
+          I also coached the swimming and water polo teams (and an affiliated club team
+          outside school), and TA’d across English, History, and Computer Science.
+        </p>
+
+        <div class="sub-cards">
+          <div class="sub-card">
+            <h4>Curriculum Design</h4>
+            <p>Built the C&amp;L Program from the ground up — frameworks for values, integrity, and leadership habits.</p>
+          </div>
+          <div class="sub-card">
+            <h4>Product Build</h4>
+            <p>Shipped a digital platform to support student use across grade levels.</p>
+          </div>
+          <div class="sub-card">
+            <h4>Stakeholder Buy-in</h4>
+            <p>Drove adoption across teachers, administrators, and students. Still engaged today as a volunteer Class Agent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PODCAST
+============================================================ -->
+<section id="podcast">
+  <div class="container">
+    <div class="chapter">
+      <div class="meta-col">
+        <p class="eyebrow">Conversations</p>
+        <h4>Learning from Leaders</h4>
+        <p class="tag-line">A podcast for the Southwestern Medical Foundation.</p>
+      </div>
+      <div class="chapter-body">
+        <h3>Long conversations with world-class researchers, founders, and leaders.</h3>
+        <p>
+          I sit down with scientists pushing the frontier, biotech founders building
+          companies that turn research into therapies, and veteran leaders whose
+          stories are worth preserving. The format is unhurried; the goal is the
+          stuff behind the polished bio.
+        </p>
+
+        <div class="sub-cards">
+          <div class="sub-card">
+            <h4>Scientific Researchers</h4>
+            <p>Frontier-level conversations with leading scientists pushing the limits of human knowledge.</p>
+          </div>
+          <div class="sub-card">
+            <h4>Biotech Founders</h4>
+            <p>Candid talks on company building, fundraising, and the grit required to bring therapies to market.</p>
+          </div>
+          <div class="sub-card">
+            <h4>Veterans &amp; Leaders</h4>
+            <p>Service, sacrifice, and the timeless principles that define leadership under pressure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WRITING + PHOTOGRAPHY
+============================================================ -->
+<section id="creative">
+  <div class="container">
+    <p class="eyebrow">Creative Pursuits</p>
+    <h2>Writing &amp; Photography</h2>
+    <p class="lede" style="max-width: 48rem;">
+      The camera and the keyboard are how I think out loud. Two blogs, long-form essays
+      on X, and an adventure-photography practice that started as a way to make sense
+      of mountains and ended up paying for itself.
+    </p>
+
+    <div class="creative-grid">
+      <div class="creative-card">
+        <h3>Writing</h3>
+        <p>
+          Two blogs — <strong>8th Summit</strong> and <strong>Dear Everybody</strong> —
+          plus long-form essays on X. Topics: business, leadership, health and wellness,
+          adventure, and personal growth.
+        </p>
+        <div class="links">
+          <a href="https://x.com/MasonPSmith" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="#" target="_blank" rel="noopener">8th Summit</a>
+          <a href="#" target="_blank" rel="noopener">Dear Everybody</a>
+        </div>
+      </div>
+      <div class="creative-card">
+        <h3>Photography</h3>
+        <p>
+          Worked professionally as an event photographer and still shoot adventure
+          photography in the mountains. Another lens for making sense of the world.
+        </p>
+        <div class="links">
+          <a href="https://masonsmithphoto.com" target="_blank" rel="noopener">masonsmithphoto.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ATHLETE
+============================================================ -->
+<section id="athlete">
+  <div class="container">
+    <p class="eyebrow">Wired for Endurance</p>
+    <h2>The Athlete</h2>
+    <p class="lede" style="max-width: 50rem;">
+      The discipline required to finish a race translates directly to how I approach
+      everything else. Below: the receipts.
+    </p>
+
+    <div class="athlete-stats">
+      <div class="athlete-stat">
+        <div class="big">Sub-3</div>
+        <h3>NYC Marathon</h3>
+        <p>Top 5% of marathon finishers worldwide.</p>
+      </div>
+      <div class="athlete-stat">
+        <div class="big">3×</div>
+        <h3>Ironman 70.3 Finisher</h3>
+        <p>Twice under 5 hours. USA Triathlon Nationals Qualifier.</p>
+      </div>
+      <div class="athlete-stat">
+        <div class="big">10+</div>
+        <h3>Endurance Races</h3>
+        <p>Consistent competitor across a variety of disciplines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BEYOND THE CV
+============================================================ -->
+<section id="beyond">
+  <div class="container">
+    <p class="eyebrow">When the Work is Done</p>
+    <h2>Beyond the CV</h2>
+    <p class="lede" style="max-width: 50rem;">
+      A life worth living shows up in the texture, not the title line. A few of the
+      things I make space for.
+    </p>
+
+    <div class="beyond-grid">
+      <div class="beyond-card">
+        <h3>Annual Ski Trips for 20+</h3>
+        <p>
+          Every year I organize and host a 20+ person ski trip — every logistical detail
+          handled so friends just show up and experience the trip. The best memories are
+          still made in the mountains.
+        </p>
+      </div>
+      <div class="beyond-card">
+        <h3>Grand Group Cooking</h3>
+        <p>
+          When the slopes close, I run the kitchen. Multi-course meals for large groups,
+          with the same focus and attention I bring to the day job.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMMUNITY
+============================================================ -->
+<section id="community" class="community">
+  <div class="container">
+    <p class="eyebrow">Community</p>
+    <h2>The Cary Council · UT Southwestern</h2>
+    <p class="lede" style="max-width: 50rem;">
+      I serve on the Steering Committee of <strong>The Cary Council</strong>, a UT&nbsp;Southwestern
+      initiative that brings together Dallas leaders to fund <em>early-career scientists</em> —
+      the next generation of medical breakthroughs.
+    </p>
+
+    <div class="grid">
+      <div class="item">
+        <h4>Community Engagement</h4>
+        <p>Bringing together Dallas leaders and philanthropists around a shared mission of scientific advancement.</p>
+      </div>
+      <div class="item">
+        <h4>Fundraising</h4>
+        <p>Generating critical resources that give early-career scientists runway to pursue bold, high-impact research.</p>
+      </div>
+      <div class="item">
+        <h4>Steering Committee</h4>
+        <p>Serving in a leadership capacity to shape the direction, strategy, and growth of the Council’s programming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONNECT / CONTACT
+============================================================ -->
+<section id="connect" class="contact">
+  <div class="container">
+    <p class="eyebrow" style="color: var(--gold);">Let’s Talk</p>
+    <h2>Begin Your Quest</h2>
+    <p class="lede">
+      Whether you’re a founder building something ambitious, an investor exploring the
+      frontier of biotech and technology, or someone who wants to sharpen the next decade
+      of their career — I’m always open to a great conversation.
+    </p>
+    <div class="cta-row">
+      <a class="btn gold" href="mailto:mpsmith600@gmail.com">
+        Email Mason <span class="arrow">→</span>
+      </a>
+      <a class="btn ghost" style="color: var(--cream); border-color: var(--cream);" href="https://www.linkedin.com/in/masonpsmith/" target="_blank" rel="noopener">
+        Connect on LinkedIn
+      </a>
+    </div>
+    <div class="socials">
+      <a href="mailto:mpsmith600@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/masonpsmith/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/MasonPSmith" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://masonsmithphoto.com" target="_blank" rel="noopener">Photography</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    © <span id="year">2026</span> Mason Smith · Rivendell · Dallas, Texas
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
