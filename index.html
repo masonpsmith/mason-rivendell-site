@@ -152,6 +152,22 @@
     color: var(--ink);
   }
   nav.top ul a:hover { color: var(--gold-warm); }
+  .nav-right { display: flex; align-items: center; gap: 1.75rem; }
+  .nav-cta {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink);
+    border: 1.5px solid var(--ink);
+    padding: 0.5rem 1.15rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background .2s ease, color .2s ease;
+  }
+  .nav-cta:hover { background: var(--ink); color: var(--cream); }
+  .nav-right ul a[aria-current="page"] { color: var(--gold-warm); }
   @media (max-width: 820px) {
     nav.top ul { display: none; }
   }
@@ -878,7 +894,7 @@
 ============================================================ -->
 <nav class="top">
   <div class="inner">
-    <a href="#top" class="brand-mark">
+    <a href="/" class="brand-mark">
       <!-- Mini arch + path glyph -->
       <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M1 27V11C1 5.477 5.477 1 11 1C16.523 1 21 5.477 21 11V27" stroke="#0F3D2E" stroke-width="1.2"/>
@@ -887,13 +903,15 @@
       </svg>
       Mason Smith
     </a>
-    <ul>
-      <li><a href="#rivendell">Rivendell</a></li>
-      <li><a href="#actium">Actium</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#beyond">Beyond</a></li>
-      <li><a href="#connect">Connect</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#rivendell">Rivendell</a></li>
+        <li><a href="#actium">Actium</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="/fellowship">Fellowship</a></li>
+      </ul>
+      <a class="nav-cta" href="https://calendly.com/mason-rivendellfellowship/30min" target="_blank" rel="noopener">Book a Fit Call</a>
+    </div>
   </div>
 </nav>
 
